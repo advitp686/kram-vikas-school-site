@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: kram-vikas-api
+    env: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: sh ./entrypoint.sh
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: DJANGO_ALLOWED_HOSTS
+        value: kram-vikas-api.onrender.com
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://kram-vikas-demo.vercel.app
+      - key: DJANGO_CSRF_TRUSTED_ORIGINS
+        value: https://kram-vikas-demo.vercel.app
+      - key: DJANGO_AUTO_SEED_DEMO_DATA
+        value: "False"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: kram-vikas-db
+          property: connectionString
+
+databases:
+  - name: kram-vikas-db
+    plan: free

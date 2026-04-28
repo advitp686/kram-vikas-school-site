@@ -1,0 +1,344 @@
+Watching for file changes with StatReloader
+[28/Apr/2026 11:36:42] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:36:42,948] - Broken pipe from ('127.0.0.1', 52078)
+[28/Apr/2026 11:36:54] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:36:54,456] - Broken pipe from ('127.0.0.1', 63508)
+[28/Apr/2026 11:37:04] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:04] "GET /api/v1/testimonials HTTP/1.1" 200 510
+[28/Apr/2026 11:37:04] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 11:37:04] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 11:37:04] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:04] "GET /api/v1/testimonials HTTP/1.1" 200 510
+[28/Apr/2026 11:37:04] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 11:37:04] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:04] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 11:37:04] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:04] "GET /api/v1/announcements HTTP/1.1" 200 260
+[28/Apr/2026 11:37:04] "GET /api/v1/announcements HTTP/1.1" 200 260
+[28/Apr/2026 11:37:14] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:14] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 11:37:14] "GET /api/v1/testimonials HTTP/1.1" 200 510
+[28/Apr/2026 11:37:14] "GET /api/v1/announcements HTTP/1.1" 200 260
+[28/Apr/2026 11:37:14] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 11:37:14] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:14] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 11:37:14] "GET /api/v1/testimonials HTTP/1.1" 200 510
+[28/Apr/2026 11:37:14] "GET /api/v1/announcements HTTP/1.1" 200 260
+[28/Apr/2026 11:37:14] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:14] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 11:37:14] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:17] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:17] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 11:37:17] "GET /api/v1/worksheets HTTP/1.1" 200 2411
+[28/Apr/2026 11:37:17] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:17] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 11:37:17] "GET /api/v1/worksheets HTTP/1.1" 200 2411
+[28/Apr/2026 11:37:19] "GET /api/v1/teachers HTTP/1.1" 200 1170
+[28/Apr/2026 11:37:19] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:19] "GET /api/v1/teachers HTTP/1.1" 200 1170
+[28/Apr/2026 11:37:19] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:29] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:29] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 11:37:32] "OPTIONS /api/v1/auth/login HTTP/1.1" 200 0
+[28/Apr/2026 11:37:32] "POST /api/v1/auth/login HTTP/1.1" 200 234
+[28/Apr/2026 11:37:32] "OPTIONS /api/v1/students/profile HTTP/1.1" 200 0
+[28/Apr/2026 11:37:32] "OPTIONS /api/v1/students/profile HTTP/1.1" 200 0
+[28/Apr/2026 11:37:32] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 11:37:32] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:11:50] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 12:11:50] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:11:50] "GET /api/v1/site-config HTTP/1.1" 200 489
+[28/Apr/2026 12:11:50] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:27:40] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:27:40] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:27:40] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:27:40] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:29:11] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:29:11] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:29:11] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:29:11] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:32:58] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:32:58] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:32:58] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:32:58] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:34:42] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:34:42] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:34:42] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:34:42] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:57:45] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 12:57:45] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:57:45] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 12:57:45] "GET /api/v1/testimonials HTTP/1.1" 200 510
+[28/Apr/2026 12:57:45] "GET /api/v1/announcements HTTP/1.1" 200 260
+[28/Apr/2026 12:57:45] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 12:57:45] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 12:57:45] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:57:45] "GET /api/v1/announcements HTTP/1.1" 200 260
+[28/Apr/2026 12:57:45] "GET /api/v1/testimonials HTTP/1.1" 200 510
+[28/Apr/2026 12:57:45] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:57:45] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:57:48] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:57:48] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:57:48] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:57:48] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:58:07] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:58:07] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:58:07] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:58:07] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:58:31] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:58:31] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 12:58:31] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 12:58:31] "GET /api/v1/students/profile HTTP/1.1" 200 598
+[28/Apr/2026 13:17:14] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 13:17:14] "GET /api/v1/testimonials HTTP/1.1" 200 510
+[28/Apr/2026 13:17:14] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:17:14] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:17:14] "GET /api/v1/announcements HTTP/1.1" 200 260
+[28/Apr/2026 13:17:14] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 13:17:14] "GET /api/v1/testimonials HTTP/1.1" 200 510
+[28/Apr/2026 13:17:14] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:17:14] "GET /api/v1/announcements HTTP/1.1" 200 260
+[28/Apr/2026 13:17:14] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:17:27] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:17:27] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:17:30] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 13:17:30] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 13:17:32] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:17:32] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:17:33] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:17:33] "GET /api/v1/worksheets HTTP/1.1" 200 2411
+[28/Apr/2026 13:17:33] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:17:33] "GET /api/v1/worksheets HTTP/1.1" 200 2411
+[28/Apr/2026 13:17:34] "GET /api/v1/teachers HTTP/1.1" 200 1170
+[28/Apr/2026 13:17:34] "GET /api/v1/teachers HTTP/1.1" 200 1170
+[28/Apr/2026 13:17:42] "GET /api/v1/faqs HTTP/1.1" 200 707
+[28/Apr/2026 13:17:42] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:17:42] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:17:42] "GET /api/v1/faqs HTTP/1.1" 200 707
+[28/Apr/2026 13:17:48] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:17:48] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:17:48] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:17:48] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:18:32] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:18:32] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:18:34] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 13:18:34] "GET /api/v1/learning-modules HTTP/1.1" 200 835
+[28/Apr/2026 13:18:35] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:18:35] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:18:36] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:18:36] "GET /api/v1/worksheets HTTP/1.1" 200 2411
+[28/Apr/2026 13:18:36] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:18:36] "GET /api/v1/worksheets HTTP/1.1" 200 2411
+[28/Apr/2026 13:18:37] "GET /api/v1/teachers HTTP/1.1" 200 1170
+[28/Apr/2026 13:18:37] "GET /api/v1/teachers HTTP/1.1" 200 1170
+[28/Apr/2026 13:18:38] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:18:38] "GET /api/v1/faqs HTTP/1.1" 200 707
+[28/Apr/2026 13:18:38] "GET /api/v1/faqs HTTP/1.1" 200 707
+[28/Apr/2026 13:18:38] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:18:39] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:18:39] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:18:39] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:18:39] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:19:00] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:19:00] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:19:00] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:19:00] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:19:00] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:19:00] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:19:15] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:19:15] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:19:15] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:19:15] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:19:15] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:19:15] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:20:39] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:20:39] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:20:39] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:21:38] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:21:38] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:21:38] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:21:38] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:21:38] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:21:38] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:22:08] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:22:08] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:22:08] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:22:08] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 13:22:08] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 13:22:08] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 15:59:01] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 15:59:01] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 15:59:01] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 15:59:01] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 15:59:01] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 15:59:01] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:10:41] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:10:41] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 16:10:41] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 16:10:41] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:10:41] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:10:41] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:14:18] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:14:18] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 16:14:18] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:14:18] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 16:14:18] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:14:18] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:37:24] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:37:24] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 16:37:24] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:37:24] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 16:37:24] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:37:24] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:51:42] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:51:42] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 16:51:42] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 16:51:42] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:51:42] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:51:42] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:52:37] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:52:37] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 16:52:37] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:52:37] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 16:52:37] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 16:52:37] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 20:06:07] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 20:06:07] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 20:06:07] "GET /api/v1/program-levels HTTP/1.1" 200 2759
+[28/Apr/2026 20:06:07] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 20:06:08] "GET /api/v1/site-config HTTP/1.1" 200 484
+[28/Apr/2026 20:06:08] "GET /api/v1/site-config HTTP/1.1" 200 484
+D:\New folder_gpt\backend\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\servers\basehttp.py", line 49, in get_internal_wsgi_application
+    return import_string(app_path)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1023, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\New folder_gpt\backend\config\wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\wsgi.py", line 13, in get_wsgi_application
+    return WSGIHandler()
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\handlers\wsgi.py", line 118, in __init__
+    self.load_middleware()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\handlers\base.py", line 41, in load_middleware
+    middleware = import_string(middleware_path)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1044, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 995, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\management\commands\runserver.py", line 143, in inner_run
+    handler = self.get_handler(*args, **options)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\contrib\staticfiles\management\commands\runserver.py", line 31, in get_handler
+    handler = super().get_handler(*args, **options)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\management\commands\runserver.py", line 73, in get_handler
+    return get_internal_wsgi_application()
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\servers\basehttp.py", line 51, in get_internal_wsgi_application
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    ) from err
+django.core.exceptions.ImproperlyConfigured: WSGI application 'config.wsgi.application' could not be loaded; Error importing module.
+D:\New folder_gpt\backend\config\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\servers\basehttp.py", line 49, in get_internal_wsgi_application
+    return import_string(app_path)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1023, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\New folder_gpt\backend\config\wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\wsgi.py", line 13, in get_wsgi_application
+    return WSGIHandler()
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\handlers\wsgi.py", line 118, in __init__
+    self.load_middleware()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\handlers\base.py", line 41, in load_middleware
+    middleware = import_string(middleware_path)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1310, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'whitenoise'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1044, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3568.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 995, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+    ~~^^^^^^^^^^^^^^^^^
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\management\commands\runserver.py", line 143, in inner_run
+    handler = self.get_handler(*args, **options)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\contrib\staticfiles\management\commands\runserver.py", line 31, in get_handler
+    handler = super().get_handler(*args, **options)
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\management\commands\runserver.py", line 73, in get_handler
+    return get_internal_wsgi_application()
+  File "D:\New folder_gpt\kramvikas\Lib\site-packages\django\core\servers\basehttp.py", line 51, in get_internal_wsgi_application
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    ) from err
+django.core.exceptions.ImproperlyConfigured: WSGI application 'config.wsgi.application' could not be loaded; Error importing module.

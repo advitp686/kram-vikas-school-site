@@ -1,0 +1,23 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/assets/*",
+      "/brand/*",
+      "/images/*",
+      "/worksheet-previews/*",
+      "/*.css",
+      "/*.js",
+      "/*.png",
+      "/*.svg",
+      "/*.ico",
+      "/*.xml",
+      "/*.txt"
+    ]
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/index.html"
+    }
+  }
+}

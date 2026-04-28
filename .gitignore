@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+.pytest_cache/
+
+# Virtual environments
+kramvikas/
+.venv/
+venv/
+
+# Django
+backend/media/
+backend/staticfiles/
+backend/.env
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/dev.log
+frontend/dev.err
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
