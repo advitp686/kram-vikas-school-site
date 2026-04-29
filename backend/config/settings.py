@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import parse_qsl, urlparse
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -72,6 +72,13 @@ database_url = os.getenv("DATABASE_URL", "").strip()
 if database_url:
     parsed = urlparse(database_url)
     if parsed.scheme in {"postgres", "postgresql"}:
+        query_options = {key: value for key, value in parse_qsl(parsed.query, keep_blank_values=False)}
+        sslmode = query_options.pop("sslmode", os.getenv("DJANGO_DB_SSLMODE", "require"))
+
+        database_options = query_options
+        if sslmode:
+            database_options["sslmode"] = sslmode
+
         DATABASES["default"] = {
             "ENGINE": "django.db.backends.postgresql",
             "NAME": parsed.path.lstrip("/") or "postgres",
@@ -80,9 +87,7 @@ if database_url:
             "HOST": parsed.hostname or "",
             "PORT": str(parsed.port or 5432),
             "CONN_MAX_AGE": int(os.getenv("DJANGO_DB_CONN_MAX_AGE", "60")),
-            "OPTIONS": {
-                "sslmode": os.getenv("DJANGO_DB_SSLMODE", "require"),
-            },
+            "OPTIONS": database_options,
         }
 
 AUTH_PASSWORD_VALIDATORS = [
