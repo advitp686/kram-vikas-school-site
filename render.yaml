@@ -1,29 +1,51 @@
 services:
   - type: web
-    name: kram-vikas-api
-    env: python
+    name: kram-vikas-school-api
+    runtime: python
     plan: free
     rootDir: backend
     buildCommand: pip install -r requirements.txt
-    startCommand: sh ./entrypoint.sh
+    preDeployCommand: sh ./render-predeploy.sh
+    startCommand: sh ./render-start.sh
+    healthCheckPath: /api/v1/health
     envVars:
       - key: DJANGO_SECRET_KEY
         generateValue: true
       - key: DJANGO_DEBUG
         value: "False"
       - key: DJANGO_ALLOWED_HOSTS
-        value: kram-vikas-api.onrender.com
+        value: kram-vikas-school-api.onrender.com
       - key: CORS_ALLOWED_ORIGINS
-        value: https://kram-vikas-demo.vercel.app
+        value: https://kram-vikas-school-site.onrender.com
       - key: DJANGO_CSRF_TRUSTED_ORIGINS
-        value: https://kram-vikas-demo.vercel.app
+        value: https://kram-vikas-school-site.onrender.com
       - key: DJANGO_AUTO_SEED_DEMO_DATA
         value: "False"
       - key: DATABASE_URL
-        fromDatabase:
-          name: kram-vikas-db
-          property: connectionString
+        sync: false
+      - key: DJANGO_DB_SSLMODE
+        value: require
+      - key: DJANGO_SECURE_SSL_REDIRECT
+        value: "True"
+      - key: DJANGO_SESSION_COOKIE_SECURE
+        value: "True"
+      - key: DJANGO_CSRF_COOKIE_SECURE
+        value: "True"
+      - key: DJANGO_SECURE_HSTS_SECONDS
+        value: "3600"
 
-databases:
-  - name: kram-vikas-db
-    plan: free
+  - type: web
+    name: kram-vikas-school-site
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: frontend/dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://kram-vikas-school-api.onrender.com/api/v1
+      - key: VITE_SITE_URL
+        value: https://kram-vikas-school-site.onrender.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

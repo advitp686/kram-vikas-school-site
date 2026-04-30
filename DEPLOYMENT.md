@@ -1,29 +1,88 @@
 # Demo Hosting Guide
 
-## Cheapest school-owned path right now
+## Lowest-friction path right now
 
-- Frontend: Azure Static Web Apps Free
-- Backend: Azure Container Apps on consumption
-- Database: Azure Database for PostgreSQL Flexible Server on the smallest burstable tier your student credits allow
-
-This keeps the public website on Azure default domains for now and lets you connect a custom domain later without changing app code.
-
-## Recommended free demo stack
-
-- Frontend: Vercel Hobby or Netlify Free
+- Frontend: Render Static Site
 - Backend: Render Free web service
-- Database: Render Postgres Free
+- Database: Neon Free PostgreSQL
 
-This matches the current codebase and avoids SQLite data loss on Render's ephemeral filesystem.
+This avoids Azure Cloud Shell, Docker, and ACR entirely. The repo now includes a root [render.yaml](D:/New%20folder_gpt/render.yaml) that can create both the frontend and backend from the Render dashboard.
+
+## Why this is the easiest route
+
+- No CLI deployment is required after the code is on GitHub.
+- Neon gives you a free PostgreSQL database without using Azure credits.
+- Render can build both services directly from your repo.
+- You can add a custom domain later without changing the app code.
 
 ## Local demo defaults
 
 - Frontend: `http://localhost:3000`
 - Backend API: `http://127.0.0.1:8000/api/v1`
 
-## Frontend deployment
+## Render dashboard deploy
 
-### Vercel
+### 1. Create the database on Neon
+
+- Create a Neon project.
+- Use the direct connection string with pooling turned off.
+- Keep the full `postgresql://...` URL ready for Render.
+
+### 2. Deploy from the Render blueprint
+
+In Render:
+
+1. Click `New` -> `Blueprint`.
+2. Connect the GitHub repo.
+3. Select this repository.
+4. Render will detect [render.yaml](D:/New%20folder_gpt/render.yaml) and propose:
+   - `kram-vikas-school-api`
+   - `kram-vikas-school-site`
+5. When prompted for environment values, paste your Neon `DATABASE_URL`.
+6. Finish the deploy.
+
+If Render says either service name is already taken, change the service names and then update these values in Render before the first successful deploy:
+
+- Backend `DJANGO_ALLOWED_HOSTS`
+- Backend `CORS_ALLOWED_ORIGINS`
+- Backend `DJANGO_CSRF_TRUSTED_ORIGINS`
+- Frontend `VITE_API_BASE_URL`
+- Frontend `VITE_SITE_URL`
+
+### 3. First deploy options
+
+By default the backend will not reseed demo content on every deploy.
+
+If you want the hosted backend to create the demo content automatically on the first deploy, temporarily set:
+
+```env
+DJANGO_AUTO_SEED_DEMO_DATA=True
+```
+
+After the first successful deploy, switch it back to:
+
+```env
+DJANGO_AUTO_SEED_DEMO_DATA=False
+```
+
+### 4. Built-in Render commands
+
+The blueprint uses:
+
+- Backend build: `pip install -r requirements.txt`
+- Backend pre-deploy: `sh ./render-predeploy.sh`
+- Backend start: `sh ./render-start.sh`
+- Frontend build: `npm install && npm run build`
+
+Health check endpoint:
+
+```text
+/api/v1/health
+```
+
+## Optional frontend alternatives
+
+If you prefer, the frontend can still go to Netlify or Vercel later.
 
 Set:
 
@@ -32,66 +91,10 @@ VITE_API_BASE_URL=https://YOUR-RENDER-API.onrender.com/api/v1
 VITE_SITE_URL=https://YOUR-FRONTEND-DOMAIN
 ```
 
-The frontend already includes `vercel.json` for React Router rewrites.
+The repo already includes:
 
-### Netlify
-
-Set the same environment variables:
-
-```env
-VITE_API_BASE_URL=https://YOUR-RENDER-API.onrender.com/api/v1
-VITE_SITE_URL=https://YOUR-FRONTEND-DOMAIN
-```
-
-The frontend already includes `netlify.toml` for SPA rewrites.
-
-## Backend deployment on Render
-
-Use the root [render.yaml](D:/New%20folder_gpt/render.yaml) blueprint or configure manually:
-
-- Root directory: `backend`
-- Build command: `pip install -r requirements.txt`
-- Start command:
-
-```bash
-sh ./entrypoint.sh
-```
-
-Required env vars:
-
-```env
-DJANGO_SECRET_KEY=...
-DJANGO_DEBUG=False
-DJANGO_ALLOWED_HOSTS=YOUR-RENDER-API.onrender.com
-CORS_ALLOWED_ORIGINS=https://YOUR-FRONTEND-DOMAIN
-DJANGO_CSRF_TRUSTED_ORIGINS=https://YOUR-FRONTEND-DOMAIN
-DATABASE_URL=postgresql://...
-DJANGO_DB_SSLMODE=require
-DJANGO_SECURE_SSL_REDIRECT=True
-DJANGO_SESSION_COOKIE_SECURE=True
-DJANGO_CSRF_COOKIE_SECURE=True
-DJANGO_SECURE_HSTS_SECONDS=3600
-```
-
-Optional one-time first deploy seed:
-
-```bash
-python manage.py seed_demo_data
-```
-
-If shell access is inconvenient on the first hosted deploy, you can temporarily set:
-
-```env
-DJANGO_AUTO_SEED_DEMO_DATA=True
-```
-
-Then switch it back to `False` after the initial content is created.
-
-Health check endpoint:
-
-```text
-/api/v1/health
-```
+- [frontend/netlify.toml](D:/New%20folder_gpt/frontend/netlify.toml)
+- [frontend/vercel.json](D:/New%20folder_gpt/frontend/vercel.json)
 
 ## Azure deployment notes
 
@@ -119,4 +122,4 @@ When you buy a domain/server later:
 - Point the frontend domain to the new frontend host.
 - Move the Django backend to a VPS, not standard shared hosting.
 - Reuse the same env-based configuration.
-- Migrate data from Render Postgres to the long-term database before the free database expires.
+- Reuse the same Neon/PostgreSQL data or migrate it to your long-term database.
