@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: kram-vikas-api-advit686
+  AZURE_WEBAPP_NAME: kram-vikas-api-686
   AZURE_WEBAPP_PACKAGE_PATH: backend
   PYTHON_VERSION: "3.12"
 
