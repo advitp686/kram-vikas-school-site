@@ -5,7 +5,8 @@ This repository contains a complete school website stack:
 - `frontend/`: Vite + React + TypeScript website
 - `backend/`: Django + Django REST Framework API
 - `kramvikas/`: Python virtual environment
-- `DEPLOYMENT.md`: free-hosting and low-cost Azure deployment guide
+- `DEPLOYMENT.md`: free-hosting, Render, and Azure deployment guide
+- `deploy/azure/`: Azure App Service + Static Web Apps deployment templates
 
 ## Local Run
 
@@ -52,5 +53,5 @@ Use [DEPLOYMENT.md](D:/New%20folder_gpt/DEPLOYMENT.md) for:
 - frontend deployment on Vercel or Netlify
 - backend deployment on Render
 - PostgreSQL-based demo persistence
-- Azure Static Web Apps + Azure Container Apps notes
+- Azure Static Web Apps + Azure App Service notes
 - later migration to a Hostinger VPS

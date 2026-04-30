@@ -8,6 +8,25 @@
 
 This avoids Azure Cloud Shell, Docker, and ACR entirely. The repo now includes a root [render.yaml](D:/New%20folder_gpt/render.yaml) that can create both the frontend and backend from the Render dashboard.
 
+## Simplest Azure path
+
+- Frontend: Azure Static Web Apps
+- Backend: Azure App Service (Linux, Python)
+- Database: Neon Free PostgreSQL
+
+This is the better Azure path for this repo because it avoids:
+
+- Cloud Shell deployment loops
+- Azure Container Apps CLI issues
+- Azure Container Registry build restrictions
+
+Azure-specific repo files:
+
+- [backend/azure-startup.sh](D:/New%20folder_gpt/backend/azure-startup.sh)
+- [deploy/azure/README.md](D:/New%20folder_gpt/deploy/azure/README.md)
+- [deploy/azure/appservice-backend.github-actions.yml.example](D:/New%20folder_gpt/deploy/azure/appservice-backend.github-actions.yml.example)
+- [deploy/azure/static-web-apps.github-actions.yml.example](D:/New%20folder_gpt/deploy/azure/static-web-apps.github-actions.yml.example)
+
 ## Why this is the easiest route
 
 - No CLI deployment is required after the code is on GitHub.
@@ -108,12 +127,34 @@ VITE_API_BASE_URL=https://YOUR-BACKEND-URL/api/v1
 VITE_SITE_URL=https://YOUR-SITE.azurestaticapps.net
 ```
 
-### Backend on Azure Container Apps
+### Backend on Azure App Service
 
-- Build from [backend/Dockerfile](D:/New%20folder_gpt/backend/Dockerfile)
-- Container startup uses [entrypoint.sh](D:/New%20folder_gpt/backend/entrypoint.sh)
-- Use `/api/v1/health` as the health probe path
-- Keep `DJANGO_AUTO_SEED_DEMO_DATA=False` after the first data setup
+- Deploy only the `backend` folder.
+- Use the startup command:
+
+```bash
+sh azure-startup.sh
+```
+
+- App settings:
+
+```env
+DJANGO_SECRET_KEY=...
+DJANGO_DEBUG=False
+DATABASE_URL=postgresql://...
+DJANGO_DB_SSLMODE=require
+DJANGO_ALLOWED_HOSTS=YOUR-APP.azurewebsites.net
+CORS_ALLOWED_ORIGINS=https://YOUR-SITE.azurestaticapps.net
+DJANGO_CSRF_TRUSTED_ORIGINS=https://YOUR-SITE.azurestaticapps.net
+DJANGO_SECURE_SSL_REDIRECT=True
+DJANGO_SESSION_COOKIE_SECURE=True
+DJANGO_CSRF_COOKIE_SECURE=True
+DJANGO_AUTO_SEED_DEMO_DATA=False
+SCM_DO_BUILD_DURING_DEPLOYMENT=true
+```
+
+- Use `/api/v1/health` as the backend verification path.
+- Keep `DJANGO_AUTO_SEED_DEMO_DATA=False` after the first data setup.
 
 ## Later move to Hostinger
 
